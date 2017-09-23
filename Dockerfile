@@ -24,6 +24,11 @@ RUN apk -U upgrade \
     protobuf-dev \
     python \
  && apk add \
+    postgresql-dev \
+    libxml2-dev \
+    libxslt-dev \
+    python \
+    build-base \
     ca-certificates \
     ffmpeg \
     file \
@@ -60,10 +65,5 @@ RUN bundle config build.nokogiri --with-iconv-lib=/usr/local/lib --with-iconv-in
 
 COPY . /mastodon
 
-COPY docker_entrypoint.sh /usr/local/bin/run
-
-RUN chmod +x /usr/local/bin/run
-
-VOLUME /mastodon/public/system /mastodon/public/assets /mastodon/public/packs
-
-ENTRYPOINT ["/usr/local/bin/run"]
+#VOLUME /mastodon/public/system /mastodon/public/assets /mastodon/public/packs
+#VOLUME /mastodon/public/system /mastodon/public/assets
