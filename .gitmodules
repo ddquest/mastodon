@@ -1,0 +1,3 @@
+[submodule "chem_bot/chem_bot"]
+	path = chem_bot/chem_bot
+	url = https://github.com/ddquest/chem_bot.git

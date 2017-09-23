@@ -28,11 +28,23 @@ services:
     depends_on:
       - web
       - streaming
+      - chem_bot
     networks:
       mastodon:
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - certbot:/etc/letsencrypt
+
+  chem_bot:
+    restart: always
+    build:
+      context: ./chem_bot
+      dockerfile: Dockerfile.chem_bot
+    command: python /chem_bot/app.py
+    ports:
+      - "5000:5000"
+    networks:
+      mastodon:
 
   web:
     restart: always
