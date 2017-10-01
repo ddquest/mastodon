@@ -7,10 +7,16 @@ $warning-red: #ff5050;      // Sunset Orange
 $gold-star: #ca8f04;        // Dark Goldenrod
 
 // Values from the classic Mastodon UI
-$classic-base-color: #282c37;         // Midnight Express
-$classic-primary-color: #9baec8;      // Echo Blue
-$classic-secondary-color: #d9e1e8;    // Pattens Blue
-$classic-highlight-color: #2b90d9;    // Summer Sky
+// $classic-base-color: #282c37;         // Midnight Express
+// $classic-primary-color: #9baec8;      // Echo Blue
+// $classic-secondary-color: #d9e1e8;    // Pattens Blue
+// $classic-highlight-color: #2b90d9;    // Summer Sky
+
+// ChemiSpadon Theme
+$classic-base-color: #03232d;
+$classic-primary-color: #007DA3;
+$classic-secondary-color: #005C78;
+$classic-highlight-color: #00C3FF;
 
 // Variables for defaults in UI
 $base-shadow-color: $black !default;
@@ -23,7 +29,8 @@ $error-value-color: $error-red !default;
 
 // Tell UI to use selected colors
 $ui-base-color: $classic-base-color !default;                  // Darkest
-$ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkest
+// $ui-base-lighter-color: lighten($ui-base-color, 26%) !default; // Lighter darkest
+$ui-base-lighter-color: lighten($ui-base-color, 32%) !default; // Lighter darkest
 $ui-primary-color: $classic-primary-color !default;            // Lighter
 $ui-secondary-color: $classic-secondary-color !default;        // Lightest
 $ui-highlight-color: $classic-highlight-color !default;        // Vibrant
