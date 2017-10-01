@@ -1,7 +1,3 @@
-export function EmojiPicker () {
-  return import(/* webpackChunkName: "emojione_picker" */'emojione-picker');
-}
-
 export function Compose () {
   return import(/* webpackChunkName: "features/compose" */'../../compose');
 }
@@ -94,8 +90,8 @@ export function MediaGallery () {
   return import(/* webpackChunkName: "status/media_gallery" */'../../../components/media_gallery');
 }
 
-export function VideoPlayer () {
-  return import(/* webpackChunkName: "status/video_player" */'../../../components/video_player');
+export function Video () {
+  return import(/* webpackChunkName: "features/video" */'../../video');
 }
 
 export function EmbedModal () {
